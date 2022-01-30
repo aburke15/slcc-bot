@@ -4,17 +4,17 @@ You can clone this repository to your local machine. Then run the following comm
 <br></br>
 ### IntelliJ IDEA install
 In the root of the project run the following command to create the runnable jar.
-```bash
+``` bash
 gradle clean shadow
 ```
 Then run this command.
-```
+``` bash
 java -jar build/libs/*.jar "your-discord-token"
 ```
 <br></br>
 ### Eclipse IDE install
 In the root of the project run the following command in the terminal.
-```
+``` bash
 gradle eclipse
 ```
 <br></br>
