@@ -16,6 +16,8 @@ public class Bot {
                     .setStatus(OnlineStatus.ONLINE)
                     .setActivity(Activity.playing("Bot in SLCC's programming club!"));
 
+            builder.addEventListeners(new PingPongListener());
+
             builder.build();
         } catch (Exception e) {
             System.out.println(e.getMessage());
