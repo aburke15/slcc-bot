@@ -11,12 +11,12 @@ public class Bot {
             String token = args[0];
             System.out.println("Token: " + token);
 
-            JDABuilder builer = JDABuilder
+            JDABuilder builder = JDABuilder
                     .createDefault(token)
                     .setStatus(OnlineStatus.ONLINE)
                     .setActivity(Activity.playing("Bot in SLCC's programming club!"));
 
-            builer.build();
+            builder.build();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
