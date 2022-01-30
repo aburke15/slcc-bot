@@ -7,7 +7,7 @@ public class PingPongListener extends ListenerAdapter {
     public void onMessageReceived(MessageReceivedEvent event) {
         try {
             if (event.getAuthor().isBot())
-                return;
+                return; // We don't want to respond to other bot accounts, including ourself
 
             String content = event.getMessage()
                     .getContentRaw();
