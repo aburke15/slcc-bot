@@ -1,16 +1,11 @@
 plugins {
     id 'java'
     id "com.github.johnrengelman.shadow" version "5.1.0"
+    id 'eclipse'
 }
 
 group 'org.example'
 version '1.0-SNAPSHOT'
-
-jar {
-    manifest {
-        attributes("Main-Class" : "Bot")
-    }
-}
 
 repositories {
     mavenCentral()
