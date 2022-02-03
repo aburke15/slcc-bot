@@ -10,14 +10,14 @@ public class Bot {
         try {
             String token = "your bot token";
             System.out.println("Token: " + token);
+            String activity = "Bot, in SLCC's programming club.";
 
             JDABuilder builder = JDABuilder
                     .createDefault(token)
                     .setStatus(OnlineStatus.ONLINE)
-                    .setActivity(Activity.playing("Bot in SLCC's programming club!"));
+                    .setActivity(Activity.playing(activity));
 
             builder.addEventListeners(new PingPongListener());
-
             builder.build();
         } catch (Exception e) {
             System.out.println(e.getMessage());

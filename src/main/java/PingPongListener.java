@@ -4,7 +4,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 public class PingPongListener extends ListenerAdapter {
     // Bot Listener Class
     @Override
-    public void onMessageReceived(MessageReceivedEvent event) {
+    public void onMessageReceived(final MessageReceivedEvent event) {
         // TODO: write event listener code here!
     }
 }
