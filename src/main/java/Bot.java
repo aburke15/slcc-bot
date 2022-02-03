@@ -8,7 +8,7 @@ public class Bot {
     // Bot Runner Class
     public static void main(String[] args) throws LoginException {
         try {
-            String token = args[0];
+            String token = "your bot token";
             System.out.println("Token: " + token);
 
             JDABuilder builder = JDABuilder
